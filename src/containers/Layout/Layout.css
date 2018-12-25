@@ -1,0 +1,17 @@
+.LayoutHeader {
+    width: 100%;
+    background-color: #fa923f;
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.Layout button {
+    width: 80px;
+    height : 40px;
+    background-color: #fa923f;
+    margin : 10px;
+    color: white;
+}
