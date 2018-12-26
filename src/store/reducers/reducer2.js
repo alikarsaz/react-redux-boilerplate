@@ -1,4 +1,5 @@
 import * as actions from "../actions/actions"
+import stateModifier from "../utility"
 
 const initialState = {
     logic: false,
@@ -13,12 +14,7 @@ const reducer = (state = initialState, action) => {
             logic:!state.logic
         }
         case actions.SETNAME :
-        return {
-            ...state,
-            name:action.value
-        }
-        
-        
+            return stateModifier(state,{name:action.value})
         default: return state;
     }
 };

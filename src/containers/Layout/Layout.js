@@ -16,7 +16,7 @@ class Layout extends Component {
                     <br/>
                     Current State: {this.props.lgc.toString()}
                     <br/>
-                    Merchant Name is: {this.props.name.toString()}
+                    Fetched name from Json placeholder: {this.props.name.toString()}
                 </div>
                 <button  onClick={this.props.onIncrementCounter}>Increment</button>
                 <button  onClick={this.props.onAddCounter}>Add 5</button>
