@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import "./Layout.css"
-import * as actions from "../../store/actions"
+import * as actions from "../../store/actions/actions"
+
 class Layout extends Component {
     state = {
         counter: 0
@@ -33,10 +34,10 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onIncrementCounter: () => dispatch({type: actions.INCREMENT}),
-        onAddCounter: () => dispatch ({type : actions.ADD , value: 5}),
-        onDecCounter: () => dispatch ({type : actions.DECREMENT }),
-        onToggle: () => dispatch ({type : actions.TOGGLE })
+        onIncrementCounter: () => dispatch(actions.increment()),
+        onAddCounter: () => dispatch (actions.add(5)),
+        onDecCounter: () => dispatch (actions.decrement()),
+        onToggle: () => dispatch (actions.toggle())
     };
 };
 
