@@ -1,3 +1,9 @@
+This project is a simple boilerplate for react, redux and redux Thunk.
+1. middleWare branch : a simple react application with redux capabilities. There is a custom logger middleware that can be found in index.js. To use this : git checkout middleWare 
+2. reduxDevTools branch : It's the modified version of middleWare branch that is able to connect to "redux Dev Tool" extension in Google Chrome . To use this : git checkout reduxDevTools
+3. master branch : It's the most complete version of the boilerplate that is presented to use redux Thunk. to demonstrate the abilities of Thunk, a simple async action is used that can be found in actions.js file . To use this : git checkout master
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
