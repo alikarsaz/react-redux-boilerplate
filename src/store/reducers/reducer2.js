@@ -1,7 +1,8 @@
 import * as actions from "../actions/actions"
 
 const initialState = {
-    logic: false
+    logic: false,
+    name:""
 }
 
 const reducer = (state = initialState, action) => {
@@ -10,6 +11,11 @@ const reducer = (state = initialState, action) => {
         return {
             ...state,
             logic:!state.logic
+        }
+        case actions.SETNAME :
+        return {
+            ...state,
+            name:action.value
         }
         
         
